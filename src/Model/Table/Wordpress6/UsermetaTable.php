@@ -36,7 +36,7 @@ class UsermetaTable extends \Bakeoff\Wordpress\Model\Table\WordpressAbstract\Abs
     {
         parent::initialize($config);
 
-        $this->setTable('wp_usermeta');
+        $this->setTable('usermeta');
         $this->setDisplayField('umeta_id');
         $this->setPrimaryKey('umeta_id');
     }

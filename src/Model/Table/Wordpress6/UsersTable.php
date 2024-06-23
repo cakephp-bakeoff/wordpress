@@ -36,7 +36,7 @@ class UsersTable extends \Bakeoff\Wordpress\Model\Table\WordpressAbstract\Abstra
     {
         parent::initialize($config);
 
-        $this->setTable('wp_users');
+        $this->setTable('users');
         $this->setDisplayField('user_login');
         $this->setPrimaryKey('ID');
     }

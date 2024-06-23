@@ -36,7 +36,7 @@ class TermRelationshipsTable extends \Bakeoff\Wordpress\Model\Table\WordpressAbs
     {
         parent::initialize($config);
 
-        $this->setTable('wp_term_relationships');
+        $this->setTable('term_relationships');
         $this->setDisplayField(['object_id', 'term_taxonomy_id']);
         $this->setPrimaryKey(['object_id', 'term_taxonomy_id']);
     }

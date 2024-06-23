@@ -36,7 +36,7 @@ class CommentmetaTable extends \Bakeoff\Wordpress\Model\Table\WordpressAbstract\
     {
         parent::initialize($config);
 
-        $this->setTable('wp_commentmeta');
+        $this->setTable('commentmeta');
         $this->setDisplayField('meta_id');
         $this->setPrimaryKey('meta_id');
     }

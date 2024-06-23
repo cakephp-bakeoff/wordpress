@@ -36,7 +36,7 @@ class LinksTable extends \Bakeoff\Wordpress\Model\Table\WordpressAbstract\Abstra
     {
         parent::initialize($config);
 
-        $this->setTable('wp_links');
+        $this->setTable('links');
         $this->setDisplayField('link_url');
         $this->setPrimaryKey('link_id');
     }

@@ -36,7 +36,7 @@ class PostsTable extends \Bakeoff\Wordpress\Model\Table\WordpressAbstract\Abstra
     {
         parent::initialize($config);
 
-        $this->setTable('wp_posts');
+        $this->setTable('posts');
         $this->setDisplayField('post_status');
         $this->setPrimaryKey('ID');
     }

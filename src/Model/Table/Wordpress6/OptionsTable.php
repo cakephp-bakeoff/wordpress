@@ -36,7 +36,7 @@ class OptionsTable extends \Bakeoff\Wordpress\Model\Table\WordpressAbstract\Abst
     {
         parent::initialize($config);
 
-        $this->setTable('wp_options');
+        $this->setTable('options');
         $this->setDisplayField('option_name');
         $this->setPrimaryKey('option_id');
     }
