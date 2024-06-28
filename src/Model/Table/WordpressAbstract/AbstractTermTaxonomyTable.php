@@ -2,9 +2,7 @@
 
 namespace Bakeoff\Wordpress\Model\Table\WordpressAbstract;
 
-use Cake\ORM\Table;
-
-abstract class AbstractTermTaxonomyTable extends Table
+abstract class AbstractTermTaxonomyTable extends \Bakeoff\Wordpress\Model\Table\PluginTable
 {
 
 

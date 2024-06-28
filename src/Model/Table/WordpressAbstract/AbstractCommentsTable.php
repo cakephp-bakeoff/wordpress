@@ -2,9 +2,7 @@
 
 namespace Bakeoff\Wordpress\Model\Table\WordpressAbstract;
 
-use Cake\ORM\Table;
-
-abstract class AbstractCommentsTable extends Table
+abstract class AbstractCommentsTable extends \Bakeoff\Wordpress\Model\Table\PluginTable
 {
 
 

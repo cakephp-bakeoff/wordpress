@@ -2,9 +2,7 @@
 
 namespace Bakeoff\Wordpress\Model\Entity\WordpressAbstract;
 
-use Cake\ORM\Entity;
-
-abstract class AbstractPost extends Entity
+abstract class AbstractPost extends \Bakeoff\Wordpress\Model\Entity\PluginEntity
 {
 
     public function _getUrl()

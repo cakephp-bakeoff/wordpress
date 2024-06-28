@@ -2,9 +2,7 @@
 
 namespace Bakeoff\Wordpress\Model\Table\WordpressAbstract;
 
-use Cake\ORM\Table;
-
-abstract class AbstractUsermetaTable extends Table
+abstract class AbstractUsermetaTable extends \Bakeoff\Wordpress\Model\Table\PluginTable
 {
 
 

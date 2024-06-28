@@ -2,9 +2,7 @@
 
 namespace Bakeoff\Wordpress\Model\Entity\WordpressAbstract;
 
-use Cake\ORM\Entity;
-
-abstract class AbstractTermTaxonomy extends Entity
+abstract class AbstractTermTaxonomy extends \Bakeoff\Wordpress\Model\Entity\PluginEntity
 {
 
 

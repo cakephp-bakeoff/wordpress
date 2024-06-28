@@ -2,9 +2,7 @@
 
 namespace Bakeoff\Wordpress\Model\Table\WordpressAbstract;
 
-use Cake\ORM\Table;
-
-abstract class AbstractPostsTable extends Table
+abstract class AbstractPostsTable extends \Bakeoff\Wordpress\Model\Table\PluginTable
 {
 
     public function findPosts($type = 'all', $options = [])
