@@ -115,7 +115,7 @@ abstract class AbstractPost extends \Bakeoff\Wordpress\Model\Entity\PluginEntity
             $this->post_author,
         ];
         $url = str_replace($placeholders, $values, $permalink_structure);
-        return \Cake\Routing\Router::url($url);
+        return \Cake\Routing\Router::url($url, true);
     }
 
 }
