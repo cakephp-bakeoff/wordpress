@@ -10,16 +10,16 @@ $blogSymbol = array_keys($blogList)[0];
 
 // Preload options
 $blog = new \Bakeoff\Wordpress\Connector();
-$options = $blog->Options->find('list', [
-    'keyField' => 'option_name',
-    'valueField' => 'option_value',
-])->toArray();
+$options = $blog->Options->find(
+    'list', keyField: 'option_name', valueField: 'option_value'
+)->toArray();
 // TODO store options per blog symbol (requires Entities to know their symbol)
 \Cake\Core\Configure::write($this->getName().'.Options', $options);
 
 // Preload all categories; 'threaded' arranges by hierarchy
-$categories = $blog->Categories->find('threaded', [
-    'parentField' => 'parent' // default is 'parent_id', Wordpress uses 'parent'
-])->toArray();
+$categories = $blog->Categories->find(
+    'threaded',
+    parentField: 'parent' // default is 'parent_id', Wordpress uses 'parent'
+)->toArray();
 // TODO store categories per blog symbol (requires Entities to know their symbol)
 \Cake\Core\Configure::write($this->getName().'.Categories', $categories);
