@@ -53,7 +53,7 @@ $query = $query->all();
 
 Normally, Wordpress would render some additional CSS with your content. You will need that CSS here to make sure your content looks like it should.
 
-Provide links to the stylesheets you would like to load under `externalCss` in [`config/Bakeoff/Wordpress-dist.php`](blob/master/config/Bakeoff/Wordpress-dist.php). The plugin will attempt to fetch the contents of these files and cache them locally.
+Provide links to the stylesheets you would like to load under `externalCss` in [`config/Bakeoff/Wordpress.php`](./config/Bakeoff/Wordpress-dist.php). The plugin will attempt to fetch the contents of these files and cache them locally.
 
 ```php
 'externalCss' => [
