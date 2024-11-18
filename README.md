@@ -18,9 +18,9 @@ $this->addPlugin(\Bakeoff\Wordpress\Plugin::class, ['bootstrap' => true, 'routes
 
 ```
 // src/Controller/AppController.php::initialize()
-$blogList = \Cake\Core\Configure::read($this->getName().'.blogList');
+$blogList = \Cake\Core\Configure::read($this->getName().'.siteList');
 $blogSymbol = array_keys($blogList)[0];
-\Cake\Core\Configure::write($this->getName().'.defaultBlog', $blogSymbol);
+\Cake\Core\Configure::write($this->getName().'.defaultSite', $blogSymbol);
 ```
 
 ### Usage

@@ -4,9 +4,9 @@
 \Cake\Core\Configure::load($this->getName(), 'default');
 
 // Pick the first configured blog to be the default blog
-$blogList = \Cake\Core\Configure::read($this->getName().'.blogList');
+$blogList = \Cake\Core\Configure::read($this->getName().'.siteList');
 $blogSymbol = array_keys($blogList)[0];
-\Cake\Core\Configure::write($this->getName().'.defaultBlog', $blogSymbol);
+\Cake\Core\Configure::write($this->getName().'.defaultSite', $blogSymbol);
 
 $blog = new \Bakeoff\Wordpress\Connector();
 
